@@ -11,7 +11,12 @@
             {% if books %}
                 {% for book in books %}
                     <div class="user_box">
-                        {{ book.name }}
+                        {% if book.book_pic %}
+                            <a href="{% url 'pages:book' book.id %}"><img class="mini_img_profile" src="{{ book.book_pic.url }}"></a>
+                        {% else %}
+                            <img class="img_profile">
+                        {% endif %}
+                        <p><a href="{% url 'pages:book' book.id %}">{{ book.name }}</a></p>
                     </div>
                 {% endfor %}
             {% else %}

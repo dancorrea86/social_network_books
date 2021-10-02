@@ -10,9 +10,13 @@
         <div class="users_search">
             {% if users %}
                 {% for user in users %}
-                
                     <div class="user_box">
-                        {{user.username}}
+                        {% if book.book_pic %}
+                            <a href="{% url 'pages:user' user.id %}"><img class="mini_img_profile" src="{{ book.book_pic.url }}"></a>
+                        {% else %}
+                            <img class="img_profile">
+                        {% endif %}
+                        <p><a href="{% url 'pages:user' user.id %}">{{ user.username }}</a></p>
                     </div>
                 {% endfor %}
             {% else %}
