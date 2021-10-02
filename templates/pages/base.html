@@ -20,7 +20,11 @@
                 <li><a href="{% url 'pages:users_page' %}">Usuários</a></li>
                 <li><a href="{% url 'pages:books' %}">Livros</a></li>
                 <li><a href="{% url 'account_signup' %}">Cadastro</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'account_logout' %}">Sair</a></li>
+                {% else %}
                 <li><a href="{% url 'account_login' %}"><i class="fas fa-user-circle"></i></a></i></li>
+                {% endif %}
             </ul>
         </div>
     </nav>
