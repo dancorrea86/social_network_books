@@ -11,8 +11,8 @@
             {% if users %}
                 {% for user in users %}
                     <div class="user_box">
-                        {% if book.book_pic %}
-                            <a href="{% url 'pages:user' user.id %}"><img class="mini_img_profile" src="{{ book.book_pic.url }}"></a>
+                        {% if user.profile_pic %}
+                            <a href="{% url 'pages:user' user.id %}"><img class="mini_img_profile" src="{{ user.profile_pic.url }}"></a>
                         {% else %}
                             <img class="img_profile">
                         {% endif %}
