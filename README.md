@@ -6,7 +6,7 @@ Rede social de compartilhamento de experiência de leitura, onde o usuário pode
 
 ![Imagem Sistema](https://github.com/dancorrea86/social_network_books/blob/master/media/imgs_project/site_image.png)
 
-## Tarefas para conclusão do projeto
+## Tarefas para conclusão do projeto f
 
 - [x] Colar imagens do sistema no README
 - [ ] Popular banco de dados com usuários e livros
