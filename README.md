@@ -9,10 +9,10 @@ Rede social de compartilhamento de experiência de leitura, onde o usuário pode
 ## Tarefas para conclusão do projeto
 
 - [x] Colar imagens do sistema no README
-- [ ] Popular banco de dados com usuários e livros
-- [ ] Alterar o label e link "Cadastro" para "Perfil" quando o usuário estiver logado
+- [x] Popular banco de dados com usuários e livros
+- [x] Alterar o label e link "Cadastro" para "Perfil" quando o usuário estiver logado
 - [ ] Adicionar botão de leitura de livros, quando o usuário estiver logado
-- [ ] Criar um footer para o site
+- [x] Criar um footer para o site
 - [ ] Adicionar o como utilizar no README
 - [ ] Publicar APP na Web
 
